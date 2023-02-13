@@ -12,7 +12,7 @@ public class HomePage  extends BasePage{
         super(driver);
     }
 
-    public HomeBlock getYahooPage() {
+    public HomeBlock getBashOrgPage() {
         return homeBlock;
     }
 }

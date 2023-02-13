@@ -24,25 +24,25 @@ public class HomePageTest extends BaseUiTestsClass {
         homeService = new HomePageService(driver);
 
         //Then
-        Assertions.assertEquals(true, homeService.getSearchPage().getYahooPage().login_name.isDisplayed());
+        Assertions.assertEquals(true, homeService.getSearchPage().getBashOrgPage().login_name.isDisplayed());
 
     }
-/*
+
     @Test
     public void verifyInputParameters () {
         //Given
         String initialTextString = "У меня всё получиться";
 
 
-        searchService = new SearchFieldService(driver);
-        searchService.getSearchPage().getYahooPage().search_field.sendKeys(initialTextString);
+        homeService = new HomePageService(driver);
+        homeService.getSearchPage().getBashOrgPage().login_name.sendKeys(initialTextString);
 
 
         //When
-        searchService.getSearchPage().getYahooPage().search_field.click();
+        homeService.getSearchPage().getBashOrgPage().login_name.click();
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(4000));
 
         //Then
         //Assertions.assertEquals(expectedErrormessage, actualErrorMessageText);
-    }*/
+    }
 }
